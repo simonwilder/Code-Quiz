@@ -9,11 +9,51 @@
 </head>
 <body>
     <header>
-        <a href="#"><h1>View high scores</h1></a>
-        <h1 id="timer">Time: 75</h1>
+        <a href="#"><span>View high scores</span></a>
+        <h3 id="timer">Time: 75</h3>
     </header>
     <!-- Starting Page (Intro) -->
-    
+    <section id="start">
+        <h2>Coding Quiz Challenge</h2>
+        <p>
+            Try to answer the following code-related questions within the time limit.
+            Keep in mind that incorrect answers will penalize your score/time by 15 second!
+        </p>
+        <!-- Button for starting the quiz -->
+        <button id="startButton" class="button">Start Quiz</button>
+    </section>
+    <!-- Questions -->
+    <section id="container">
+        <div id="questions" class="hide">
+            <div id="questionChoice"></div>
+
+            <div id="choices" class="choiceButton"></div>
+
+            <div id="answer"></div>
+        </div>
+
+    <!-- Saved Scores -->
+    <div id="scores" class="hide">
+        <h3>All done!</h3>
+        <p>Your final score is <span id="score"></span></p>
+        <label>Enter initials: </label>
+        <input type="text" name="initials" id="initials" placeholder="" />
+        <button id="submit" class="button">Submit</button>
+    </div>
+
+    <div id="highScores" class="hide">
+        <h3>Highscores</h3>
+        <span id="savedScore" class="hide">No scores Saved!</span>
+        <ol id="storedScore">
+
+        </ol>
+        <button id="back" class="button">Go back</button>
+        <button id="clear" class="button">Clear Highscores</button>
+
+    </div>
+    </section>
+        
+   
 
  <script src="assets/script.js"></script>
 </body>
