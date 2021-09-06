@@ -17,17 +17,32 @@
         <h2>Coding Quiz Challenge</h2>
         <p>
             Try to answer the following code-related questions within the time limit.
-            Keep in mind that incorrect answers will penalize your score/time by 15 second!
+            Keep in mind that incorrect answers will penalize your score/time by ten second!
         </p>
         <!-- Button for starting the quiz -->
-        <button id="startButton" class="button">Start Quiz</button>
+        <button id="start-button" class="button">Start Quiz</button>
     </section>
     <!-- Questions -->
     <section id="container">
         <div id="questions" class="hide">
-            <div id="questionChoice"></div>
+            <div id="question-choice"></div>
 
-            <div id="choices" class="choiceButton"></div>
+            <div id="choices" class="choice-button">
+                <ol>
+                    <li id="choice-1">
+
+                    </li>
+                    <li id="choice-2">
+
+                    </li>
+                    <li id="choice-3">
+
+                    </li>
+                    <li id="choice-4">
+
+                    </li>
+                </ol>
+            </div>
 
             <div id="answer"></div>
         </div>
@@ -41,10 +56,10 @@
         <button id="submit" class="button">Submit</button>
     </div>
 
-    <div id="highScores" class="hide">
+    <div id="high-scores" class="hide">
         <h3>Highscores</h3>
-        <span id="savedScore" class="hide">No scores Saved!</span>
-        <ol id="storedScore">
+        <span id="saved-score" class="hide">No scores Saved!</span>
+        <ol id="stored-score">
 
         </ol>
         <button id="back" class="button">Go back</button>
