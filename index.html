@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <a href="#"><span>View high scores</span></a>
         <h3 id="timer">Time: 75</h3>
     </header>
@@ -23,22 +23,25 @@
         <button id="start-button" class="button">Start Quiz</button>
     </section>
     <!-- Questions -->
-    <section id="container">
+    <section id="card">
         <div id="questions" class="hide">
             <div id="question-choice"></div>
 
-            <div id="choices" class="choice-button">
+            <div id="choices" class="button-grid">
                 <ol>
-                    <li id="choice-1">
+                    <li id="choice-1" class="button">
 
                     </li>
-                    <li id="choice-2">
+                    <li id="choice-2" class="button">
 
                     </li>
-                    <li id="choice-3">
+                    <li id="choice-3" class="button">
 
                     </li>
-                    <li id="choice-4">
+                    <li id="choice-4" class="button">
+
+                    </li>
+                    <li id="choice-5" class = "hide">
 
                     </li>
                 </ol>
@@ -46,26 +49,26 @@
 
             <div id="answer"></div>
         </div>
-
+    </section>
     <!-- Saved Scores -->
-    <div id="scores" class="hide">
-        <h3>All done!</h3>
-        <p>Your final score is <span id="score"></span></p>
-        <label>Enter initials: </label>
-        <input type="text" name="initials" id="initials" placeholder="" />
-        <button id="submit" class="button">Submit</button>
-    </div>
+    <section>
+        <div id="scores" class="hide">
+            <h3>All done!</h3>
+            <p>Your final score is <span id="score"></span></p>
+            <label>Enter initials: </label>
+            <input type="text" name="initials" id="initials" placeholder="" />
+            <button id="submit" class="button">Submit</button>
+        </div>
 
-    <div id="high-scores" class="hide">
-        <h3>Highscores</h3>
-        <span id="saved-score" class="hide">No scores Saved!</span>
-        <ol id="stored-score">
+        <div id="high-scores" class="hide">
+            <h3>Highscores</h3>
+            <ol id="stored-score">
 
-        </ol>
-        <button id="back" class="button">Go back</button>
-        <button id="clear" class="button">Clear Highscores</button>
+            </ol>
+            <button id="back" class="button">Go back</button>
+            <button id="clear" class="button">Clear Highscores</button>
 
-    </div>
+        </div>
     </section>
         
    
