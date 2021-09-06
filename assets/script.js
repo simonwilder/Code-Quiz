@@ -52,6 +52,7 @@ var header = document.getElementById("header");
 var back = document.getElementById("back");
 var clear = document.getElementById("clear");
 var initials = document.getElementById("initials");
+var storedScore = document.getElementById("stored-score")
 
 
 startButton.addEventListener("click", function(event){
@@ -158,17 +159,14 @@ function totalScore() {
 }
 
 
-function displayScore() {
+function displayScore(s) {
     questionEl.classList.add("hide")
     submitScore.classList.remove("hide")
-
-
 }
 
-function storeScore(score) { 
+function storeScore(s) { 
     submitScore.classList.add("hide")
     highScores.classList.remove("hide")
-    initials.value="";
 }
 
 
